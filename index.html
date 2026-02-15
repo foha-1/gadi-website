@@ -113,12 +113,21 @@
 <section id="contact" class="section">
     <div class="container">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <form action="https://formsubmit.co/gadinigerialtd@gmail.com" method="POST">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Prevent spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submission -->
+    <input type="hidden" name="_next" value="https://gadi-website.vercel.app/thankyou.html">
+
+    <button type="submit">Submit</button>
+</form>
+
     </div>
 </section>
 
